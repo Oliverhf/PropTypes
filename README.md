@@ -43,7 +43,7 @@
         ])
 
    
-* arrayOf => Check for the value types inside of the array. For example:
+* arrayOf() => Check for the value types inside of the array. For example:
 
         Note: The prop is an array that contains only number types in.
 
@@ -52,5 +52,22 @@
 You can combine multiple pieces togther: 
 
         array: PropTypes.arrayOf(oneOfPropTypes.number)
+
+* shape({}) => Allows you to check different objects. Although doesn't check only the keys specified inside of the object.
+
+
+
+        Note: It won't check the favoriteFood, for instance.
+
+          person: PropTypes.shape({
+            name: PropTypes.string,
+            age: PropTypes.number
+          })
+
+For checking only the keys specified inside of the object use `.exact({})` instead of `.shape({})`
+
+         
+
+
    
 

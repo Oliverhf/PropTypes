@@ -1,12 +1,20 @@
 import PropTypes from "prop-types"
 
-function Component({name, age, renderable, element, state, array}) {
-    return array
+function Component({name, age, renderable, element, state, array, person}) {
+    return null
 }
 
 
 Component.propTypes = {
-  array: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string]))
+    person: PropTypes.exact({
+    name: PropTypes.string,
+    age: PropTypes.number
+  })
+  // person: PropTypes.shape({
+  //   name: PropTypes.string,
+  //   age: PropTypes.number
+  // }).isRequired
+  // array: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string]))
   // array: PropTypes.arrayOf(PropTypes.number)
   // state: PropTypes.oneOf([
   //   "Loading",

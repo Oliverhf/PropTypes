@@ -3,7 +3,7 @@ import Component from './components/component'
 
 
 function App() {
-  return <Component array={['a', 'b', 4 , 7, 'y']}/>
+  return <Component person={{name: "Oliver", age: 23}}/>
 }
 
 
