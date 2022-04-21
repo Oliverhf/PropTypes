@@ -1,1 +1,1 @@
-# proptypes
+# React PropTypes
