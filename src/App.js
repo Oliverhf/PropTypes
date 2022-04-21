@@ -3,7 +3,7 @@ import Component from './components/component'
 
 
 function App() {
-  return <Component name="Sally" renderable={["hi"]} element={<Component/>} />
+  return <Component array={['a', 'b', 4 , 7, 'y']}/>
 }
 
 
